@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron";
+  list-style: none;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kalkulator {
+  height: 45vh;
+  width: 50vh;
+  background: slategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input {
+  width: 90%;
+  height: 15%;
+  background: lightblue;
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.numbers {
+  align-self: flex-end;
+  margin-right: 5%;
+}
+ol {
+  display: block;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  width: fit-content;
+  user-select: none;
+}
+ol li {
+  background: gray;
+  margin: 10px;
+  height: 50px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+.operators ol li {
+  background: rgb(83, 83, 83);
+}
+.operators ol:first-child li,
+.operators ol:last-child li {
+  width: max(75px * 2);
+}
